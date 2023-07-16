@@ -1,0 +1,10 @@
+.container{
+    grid-template-columns: repeat(3,1fr);
+}
+.food img{
+   width: 100%;
+}
+
+/* .food{
+    padding: 0px;
+} */
