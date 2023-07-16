@@ -3,137 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pseudo</title>
-   <style>
-    nav{
-        display: flex;
-        justify-content: space-between;
-    }
-    
-    nav a{
-        text-decoration: none;
-        color: black;
-        font-size: 25px;
-    }
+    <title>Responsive</title>
+    <link rel="stylesheet" media="screen and (max-width: 600px)" href="css/mobile.css">
+    <link rel="stylesheet" media="screen and (min-width: 600px)" href="css/portrait tablets and large phones.css">
+    <link rel="stylesheet" media="screen and (min-width: 768px)" href="css/landscape tablets.css">
+    <link rel="stylesheet" media="screen and (min-width: 992px)" href="css/laptops and desktops.css">
+    <link rel="stylesheet" media="screen and (min-width: 1200px)" href="css/large laptops and desktops.css">
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 10px;
+        }
 
-    form{
-        display: flex;
-        flex-direction: column;
-
-        
-        width: 50%;
-    }
-
-    form input{
-        margin-top: 20px;
-        height: 30px;
-        width: 500px;
-    }
-
-    .container{
-       
-        display: flex;
-        justify-content: center;
-    }
-
-    input:focus{
-        outline: 0;
-        color: blue;
-        font-family: 'Courier New', Courier, monospace;
-    }
-
-
-    ::placeholder{
-
-        color: red;
-        font-size: 30px;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    }
-    .h3{
-        
-       
-        border: 2px solid red;
-        margin-top: 50px;
-        
-    }
-
-    .h3 h3{
-        text-align: center;
-    }
-
-    .container-1 .item{
-        border: 1px solid aqua;
-    }
-
-    .container-1{
-        display: grid;
-        grid-template-columns:repeat(4,500px);
-        justify-content: space-between;
-    }
-
-
-   </style>
+        .food{
+            border: 3px solid skyblue;
+            border-radius: 10px;
+            padding: 20px;
+        }
+    </style>
 </head>
 <body>
-    <header>
-
-    </header>
-
-    <main>
-
-        <nav>
-            <div>
-                <a href="">Home</a>
-            <a href="">Home</a>
-            <a href="">Home</a>
-            <a href="">Home</a>
-            </div>
-            <a href="">Login</a>
-        </nav>
-<div class="h3">
-    <h3>Fill Up Login Form</h3>
-
-</div>
-       
-        <div class="container">
-            <form>
-
-                <input type="email" name="" id="" placeholder="Enter Your E-mail">
-                <input type="password" placeholder="Enter Your password">
-                <input type="submit" value="submit">
-            </form>
-        </div><br><br><br><br><br>
-        
-        <div class="container-1">
-            <div class="item">item - 1</div>
-            <div class="item">item - 2</div>
-            <div class="item">item - 3</div>
-            <div class="item">item - 4</div>
-            <div class="item">item - 5</div>
-            <div class="item">item - 6</div>
-            <div class="item">item - 7</div>
-            <div class="item">item - 8</div>
-            <div class="item">item - 9</div>
-            <div class="item">item - 10</div>
-            <div class="item">item - 11</div>
-            <div class="item">item - 12</div>
-            <div class="item">item - 13</div>
-            <div class="item">item - 14</div>
-            <div class="item">item - 15</div>
-            <div class="item">item - 16</div>
-            <div class="item">item - 17</div>
-            <div class="item">item - 18</div>
-            <div class="item">item - 19</div>
-            <div class="item">item - 20</div>
+    <div class="container">
+        <div class="food">
+            <img src="my - pic/food.jpg" alt="">
+            <h3>food 1</h3>
+            <p>price: $100</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque assumenda eius ut! Beatae reprehenderit expedita eius accusamus voluptate eveniet id.</p>
+            <button>Buy Now</button>
         </div>
-
-        <h3>Ahnaf Hossain Abir</h3>
-        <img src="my - pic/ahnaf.jpg" alt="" width="380px" height="420px">
-
-    </main>
-
-    <footer>
-
-    </footer>
+        <div class="food">
+            <img src="my - pic/food.jpg" alt="">
+            <h3>food 2</h3>
+            <p>price: $200</p>
+            <p>Nemo quidem debitis hic! Dolorum vero fugit ullam, minima molestiae et alias praesentium veritatis dolores omnis repellat quos. Quisquam, iure?</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="food">
+            <img src="my - pic/food.jpg" alt="">
+            <h3>food 3</h3>
+            <p>price: $300</p>
+            <p>Cupiditate aperiam possimus eligendi quibusdam quod iure dolorum magni deserunt explicabo! Velit mollitia, amet culpa debitis minus similique iusto corrupti.</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="food">
+            <img src="my - pic/food.jpg" alt="">
+            <h3>food 4</h3>
+            <p>price: $400</p>
+            <p>Accusamus distinctio laboriosam tenetur modi ipsa quidem, doloremque nobis optio quos sed quibusdam voluptas veritatis consequuntur nam soluta impedit. Temporibus.</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="food">
+            <img src="my - pic/food.jpg" alt="">
+            <h3>food 5</h3>
+            <p>price: $500</p>
+            <p>Totam fugiat sequi enim, voluptatibus aut asperiores ducimus. Doloribus quasi possimus similique aspernatur excepturi est dolorem necessitatibus facere error explicabo!</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="food">
+            <img src="my - pic/food.jpg" alt="">
+            <h3>food 6</h3>
+            <p>price: $600</p>
+            <p>Asperiores impedit soluta quasi voluptate et nobis placeat ratione error? Excepturi eveniet doloremque tenetur quod dolor illum veniam cum ex?</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="food">
+            <img src="my - pic/food.jpg" alt="">
+            <h3>food 7</h3>
+            <p>price: $700</p>
+            <p>Magni qui illum repudiandae, quibusdam cupiditate ratione, corporis perspiciatis iste minima sequi, animi quos assumenda quo enim at nulla quas.</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="food">
+            <img src="my - pic/food.jpg" alt="">
+            <h3>food 8</h3>
+            <p>price: $800</p>
+            <p>Unde, amet tempora? Explicabo consequatur ratione voluptas perspiciatis repellat, libero adipisci in nemo ut nam numquam at voluptates dolor aperiam!</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="food">
+            <img src="my - pic/food.jpg" alt="">
+            <h3>food 9</h3>
+            <p>price: $900</p>
+            <p>Cumque, quam itaque recusandae porro ab, illo nobis tempore sapiente corporis, ipsam incidunt! Optio nisi, doloremque labore eaque illum provident.</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="food">
+            <img src="my - pic/food.jpg" alt="">
+            <h3>food 10</h3>
+            <p>price: $1000</p>
+            <p>Dolorum blanditiis magnam consequuntur magni non. Beatae debitis quo itaque error harum voluptas corporis labore quod veritatis amet, facilis a.</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="food">
+            <img src="my - pic/food.jpg" alt="">
+            <h3>food 11</h3>
+            <p>price: $1100</p>
+            <p>Praesentium at voluptatem commodi reiciendis necessitatibus. Officiis rerum in beatae aspernatur quo reprehenderit culpa laboriosam repellat incidunt, molestiae quibusdam voluptatibus.</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="food">
+            <img src="my - pic/food.jpg" alt="">
+            <h3>food 12</h3>
+            <p>price: $1200</p>
+            <p>Similique, laboriosam in possimus inventore voluptatum consectetur ducimus et ullam placeat, velit consequuntur neque non aut facilis temporibus! Vero, aspernatur.</p>
+            <button>Buy Now</button>
+        </div>
+    </div>
 </body>
 </html>

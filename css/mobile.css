@@ -2,6 +2,6 @@
     grid-template-columns: repeat(1,1fr);
 }
 
-/* .food{
-    padding: 5px;
-} */
+.food img{
+    width: 100%;
+}
